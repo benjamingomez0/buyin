@@ -22,8 +22,7 @@ export default {
 
 <style >
     html {
-        /* font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-            "Helvetica Neue", Arial, sans-serif; */
+        font-family: 'Yaldevi', "Helvetica Neue", Arial, sans-serif;
         font-style: normal;
         font-size: 16px;
         word-spacing: 1px;

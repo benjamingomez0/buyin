@@ -1,6 +1,6 @@
 <template>
     <div>
-        <pre>{{ products[0] }}</pre>
+        <AppItemDisplay :productArr = "filteredProducts"/>
     </div>
 </template>
 
