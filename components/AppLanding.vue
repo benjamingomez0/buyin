@@ -1,13 +1,15 @@
 <template>
-  <section class="masthead" role="img" aria-label="Image Description">
-    <h1>Buy-in</h1>
-        <button>
-            <nuxt-link to="/products">
-                See Products
-            </nuxt-link>
-        
-        </button>
-</section>
+    <div class="content">
+        <section class="masthead" role="img" aria-label="Image Description">
+            <h1>Buy-in</h1>
+                <button>
+                    <nuxt-link to="/products">
+                        See Products
+                    </nuxt-link>
+                
+                </button>
+        </section>
+    </div>
 </template>
 
 <script>
@@ -16,7 +18,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
     .masthead {
     display: flex;
     justify-content: center;
