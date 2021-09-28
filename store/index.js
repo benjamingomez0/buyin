@@ -13,6 +13,9 @@ export const mutations = {
     //updates global state
     updateProducts: (state, data) => {
         state.products = data
+    },
+    updateCart: (state, data) => {
+        state.cart.push(data)
     }
 }
 
@@ -27,7 +30,7 @@ export const actions = {
         }
         try{
             await fetch('https://fakestoreapi.com/products').then(res => res.json()).then((data)=> {
-                console.log(data)
+                // console.log(data)
                 commit('updateProducts', data)
             })
         }catch(err){

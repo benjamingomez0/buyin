@@ -17,7 +17,7 @@
                 <!-- this is the bottom part with the price -->
                 <div>
                     <h4>{{ item.title }}</h4>
-                    <p>Price: {{ item.price }}</p>
+                    <p>Price: {{ item.price.toFixed(2) }}</p>
                     <p>Avr Rating: {{ item.rating.rate }}</p>
                     <p>Ratings: {{ item.rating.count }}</p>
                 </div>
