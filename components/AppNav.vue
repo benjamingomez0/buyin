@@ -8,16 +8,25 @@
             <nuxt-link to="/products">Products</nuxt-link>
         </li>
         </ul>
-        <div class="smallnum" ></div>
-        <nuxt-link to="/cart">Cart</nuxt-link>
+        <div class="smallnum" v-if="getTotalItems > 0">
+            {{ getTotalItems }}
+        </div>
+            <nuxt-link to="/cart">Cart</nuxt-link>
     </nav>
    
 </template>
 
 <script>
-    export default {
-        
-    }
+import { mapGetters } from 'vuex';
+
+export default {
+    computed: {
+        ...mapGetters([
+            "getTotalItems",
+        ])
+    },
+};
+    
 </script>
 
 <style lang="scss" scoped>
