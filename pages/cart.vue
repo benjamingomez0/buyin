@@ -16,12 +16,10 @@
           <tr v-for="item in cart" :key="item.id">
             <td>
               {{ item.itemName }}
-              <!-- <span v-if="item.options">- {{ item.options }}</span> -->
             </td>
             <td>
                 <AppRemoveCartItem :itemInfo = "item"/>
             </td>
-            <!-- {{ item.combinedPrice }} -->
             <td> {{item.subtotal.toFixed(2)}} </td>
           </tr>
           <tr>

@@ -13,8 +13,7 @@ export default {
             'products',
         ]),
         filteredProducts() {
-            //to do:
-            //filter results by category.
+            //Future Improvements -> add filtering functionaliy
             return this.products
         }
     },
