@@ -1,14 +1,11 @@
 <template>
     <div>
-
-
         <input 
             type="number"  
             @change ="cartUpdater()"
             v-model="amount"
             class="changeAmt" 
             >
-        
     </div>
 </template>
 

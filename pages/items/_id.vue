@@ -10,7 +10,7 @@
             >
             </section>
 
-            <!-- <p> Description: </p> -->
+            <!-- details of item -->
             <section class="details">
                 <h1 id ="title" >{{ currentItem.title }}</h1>
                 <h3>Price: ${{ currentItem.price.toFixed(2) }}</h3>
@@ -24,7 +24,8 @@
                     Add to Cart - ${{ combinedPrice }}
                     </button>
                 </div>
-                
+
+            <!-- the toast which alerts user that it was submitted -->
             <AppCartAddedMessage v-if= "cartSubmitted"> Order Submitted! <br> 
                     View <nuxt-link to="/cart">cart</nuxt-link>
                     <br>
