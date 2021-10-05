@@ -62,7 +62,7 @@ export const mutations = {
 
 export const actions = {
     //pulls in data from Fake Store API
-    async getProductData({
+    async nuxtServerInit({
         commit,
         state
     }) {

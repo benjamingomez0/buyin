@@ -1,11 +1,6 @@
 <template>
     <section class = "productinfo">
-        <!-- <div>  -->
-            <!-- this is the head -->
-            <!-- name delivery time etc -->
-        <!-- </div> -->
-
-            <!-- this is the card more or less -->
+            <!-- this is the product card  -->
         <div class="row">
             <div
             v-for="item in productArr"

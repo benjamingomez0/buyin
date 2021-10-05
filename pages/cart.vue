@@ -18,6 +18,7 @@
               {{ item.itemName }}
             </td>
             <td>
+              <!-- input component that adjusts cart amounts -->
                 <AppRemoveCartItem :itemInfo = "item"/>
             </td>
             <td> {{item.subtotal.toFixed(2)}} </td>
